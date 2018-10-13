@@ -14,7 +14,7 @@ RUN apk upgrade --no-cache && \
 
 VOLUME "${THELOUNGE_HOME}"
 
-EXPOSE 9000
+EXPOSE ${PORT}
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["thelounge", "start"]
