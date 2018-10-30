@@ -1,6 +1,6 @@
 FROM node:alpine
 
-MAINTAINER Jeremy T. Bouse <Jeremy.Bouse@UnderGrid.net>
+LABEL maintainer="Jeremy.Bouse@UnderGrid.net"
 
 ARG THELOUNGE_VERSION=3.0.0-rc.3
 
