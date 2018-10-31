@@ -2,7 +2,7 @@ FROM node:alpine
 
 LABEL maintainer="Jeremy.Bouse@UnderGrid.net"
 
-ARG THELOUNGE_VERSION=3.0.0-rc.3
+ARG THELOUNGE_VERSION=3.0.0-rc.4
 
 ENV NODE_ENV production
 ENV THELOUNGE_HOME "/var/opt/thelounge"
@@ -13,8 +13,6 @@ RUN apk upgrade --no-cache && \
     yarn cache clean --force
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-
-VOLUME "${THELOUNGE_HOME}"
 
 EXPOSE ${PORT}
 
